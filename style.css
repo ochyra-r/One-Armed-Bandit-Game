@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap&subset=latin-ext');
+
+:root {
+	--main-color: #313131;
+	--bg-color: #e4e4e4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	color: var(--main-color);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bg-color);
+	min-height: 100vh;
+	width: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	width: 80%;
+}
+
+.wrapper h1 {
+	margin: 10px;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.wrapper .game {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 10px;
+}
+
+.wrapper .game .option {
+	width: 30%;
+	height: 200px;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.wrapper .form input {
+	padding: 5px 10px;
+	font-size: 26px;
+	border: none;
+	border-radius: 10px;
+	border: 2px solid transparent;
+	outline: none;
+}
+
+.wrapper .form input:focus {
+	border: 2px solid var(--main-color);
+}
+
+.wrapper .form button {
+	padding: 5px 10px;
+	font-size: 26px;
+	border: 2px solid var(--main-color);
+	border-radius: 10px;
+	outline: none;
+	background-color: var(--main-color);
+	color: var(--bg-color);
+	transition: .2s;
+}
+
+.wrapper .form button:hover {
+	cursor: pointer;
+	background-color: var(--bg-color);
+	color: var(--main-color);
+}
+
+.wrapper .form button:active {
+	transform: scale(0.95);
+}
+
+.wrapper .wallet {
+	align-self: flex-start;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.wrapper .wallet .money {
+	font-weight: bold;
+}
+
+.wrapper .panel {
+	align-self: flex-start;
+	font-size: 20px;
+}
+
+.wrapper .panel span {
+	font-weight: bold;
+}
+
+.game-over {
+	position: fixed;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: .3s;
+}
+
+.game-over h1 {
+	color: #fff;
+}
+
+.game-over button {
+	padding: 5px 10px;
+	font-size: 26px;
+	border: 2px solid var(--bg-color);
+	border-radius: 10px;
+	outline: none;
+	background-color: var(--main-color);
+	color: var(--bg-color);
+	transition: .2s;
+}
+
+.game-over button:hover {
+	background-color: var(--bg-color);
+	color: var(--main-color);
+	cursor: pointer;
+}
+
+.game-over button:active {
+	transform: scale(0.95);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>Jednoręki bandyta</h1>
+		<div class="game">
+			<div class="option" data-option></div>
+			<div class="option" data-option></div>
+			<div class="option" data-option></div>
+		</div>
+		<div class="form">
+			<input type="number" placeholder="Podaj stawkę" data-input min="0" step="1">
+			<button data-button>Zakręć!</button>
+		</div>
+		<div class="wallet">
+			<p>Twoje środki przed kolejną grą to: <span class="money" data-money></span>$</p>
+		</div>
+		<div class="panel">
+			<p><span class="result"></span>Za Tobą <span class="games"></span> gier, w tym
+				<span class="wins"></span> wygranych i <span class="losses"></span> przegranych</p>
+		</div>
+	</div>
+	<div class="game-over">
+		<h1>Game Over</h1>
+		<button class="new-game">Zacznij grę od nowa</button>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
